@@ -7,7 +7,7 @@ import java.util.List;
 
 public class TestOne {
 	public static void main(String[] args) {
-		// Java8之前
+		// Java8之前,使用匿名内部类的形式
 //		new Thread(new Runnable() {
 //			
 //			@Override
@@ -17,7 +17,7 @@ public class TestOne {
 //		}).start();
 		
 		
-		// Java8之后
+		// Java8之后,直接使用lambda表达式
 		new Thread(() -> System.out.println("lambda is much better")).start();
 		
 		new Thread(() -> {int a = 3;
